@@ -22,3 +22,12 @@
     width: 30px;
     height: 30px;
 }
+
+.pMargin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.box-title-margin {
+    margin-top: 3%;
+}
