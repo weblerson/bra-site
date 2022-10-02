@@ -10,15 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img class="logo logoBorda" src="src/logo.gif" alt="logo">
-                <span class="h5">BRA - Projeto</span>
-              </a>
-
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -29,7 +25,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Quem somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Objetivos</a>
+                    <a class="nav-link active" href="#">Objetivos e Metas</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="#">Contatos</a>
@@ -41,77 +37,87 @@
     </header>
 
     <main>
-        <section class="row text-center">
-            <div class="col-lg who-background">
-                <div style="margin-top: 3%;" class="container text-start">
-                  <p class="pMargin h3">
-                      Quem nós somos:
+      <section class="low-device">
+        <div class="row text-center">
+          <figure class="col-lg text-start figures">
+            <img class="logo" src="src/logo.gif" alt="logo">
+            <img class="title" src="src/title.png" alt="titulo">
+          </figure>
+        </div>
+      </section>
+
+      <article class="row text-center">
+          <div class="col-lg who-background">
+              <div style="margin-top: 3%;" class="container text-start">
+                <p class="pMargin h3">
+                    Quem nós somos:
+                </p>
+              </div>
+              <div class="container text-center">
+                  <p class="lead text-start pMargin">
+                      A BRA é uma empresa formada por dois projetos socioeconômicos voltados a inovação tecnológica do estado
+                      do Amazonas, a BRA Premens e a BRA Torreifer, tendo total foco na criação de dispositivos de automação 
+                      no processo da fabricação da farinha de mandioca a baixo custo, desta forma, visando o 
+                      crescimento econômico das áreas rurais do estado e o aumento da produtividade.
                   </p>
-                </div>
-                <div class="container text-center">
-                    <p class="lead text-start pMargin">
-                        A BRA é uma empresa formada por dois projetos socioeconômicos voltados a inovação tecnológica do estado
-                        do Amazonas, a BRA Premens e a BRA Torreifer, tendo total foco na criação de dispositivos de automação 
-                        no processo da fabricação da farinha de mandioca a baixo custo, desta forma, visando o 
-                        crescimento econômico das áreas rurais do estado e o aumento da produtividade.
-                    </p>
-                    
-                    <p class="lead text-start pMargin">
-                        A BRA Premens é voltada na criação de um dispositivo semiautomático da etapa de prensagem das raízes de 
-                        mandioca para eliminação do excesso de água presente nelas, consequentemente deixando pronto uma farinha 
-                        desmembrada e seca, pronta para o próximo processo: a torrefação. 
-                    </p>
-                        
-                    <p class="lead text-start pMargin">
-                        Enquanto o objetivo da BRA Torreifer é o desenvolvimento de um dispositivo para automatizar e monitorar o 
-                        processo de torrefação da farinha de mandioca de pequenos produtores locais, podendo ser aplicado as 
-                        tipologias de farinha d’água ou seca, em regiões rurais com acesso facultativo a fornecimento constante 
-                        de internet.
-                    </p>
-                </div>
-            </div>
+                  
+                  <p class="lead text-start pMargin">
+                      A BRA Premens é voltada na criação de um dispositivo semiautomático da etapa de prensagem das raízes de 
+                      mandioca para eliminação do excesso de água presente nelas, consequentemente deixando pronto uma farinha 
+                      desmembrada e seca, pronta para o próximo processo: a torrefação. 
+                  </p>
+                      
+                  <p class="lead text-start pMargin">
+                      Enquanto o objetivo da BRA Torreifer é o desenvolvimento de um dispositivo para automatizar e monitorar o 
+                      processo de torrefação da farinha de mandioca de pequenos produtores locais, podendo ser aplicado as 
+                      tipologias de farinha d’água ou seca, em regiões rurais com acesso facultativo a fornecimento constante 
+                      de internet.
+                  </p>
+              </div>
+          </div>
 
-            <aside class="col-lg">
-                <div class="container caixinha">
-                    <p class="h5 text-start box-title-margin">
-                        <img class="boxIcon" src="src/objetivos.png" alt="objetivos">
-                        Objetivos:
-                    </p>
-                    <p class="lead text-start">
-                        Desenvolvimento de dispositivos  para automatizar a fabricação da farinha de mandioca a baixo 
-                        custo no estado do Amazonas, de forma sustentável, técnica e segura.
-                    </p>
-                </div><br>
+          <aside class="col-lg">
+              <div class="container caixinha">
+                  <p class="h5 text-start box-title-margin">
+                      <img class="boxIcon" src="src/objetivos.png" alt="objetivos">
+                      Objetivos:
+                  </p>
+                  <p class="lead text-start">
+                      Desenvolvimento de dispositivos  para automatizar a fabricação da farinha de mandioca a baixo 
+                      custo no estado do Amazonas, de forma sustentável, técnica e segura.
+                  </p>
+              </div><br>
 
-                <div class="container caixinha">
-                    <p class="h5 text-start box-title-margin">
-                        <img class="boxIcon" src="src/valores.png" alt="visão">
-                        Visão:
-                    </p>
-                    <p class="lead text-start">
-                        Ser uma empresa de destaque e exemplo no desenvolvimento econômico das áreas rurais no estado, 
-                        melhorando a qualidade de vida e sendo referência nacional.
-                    </p>
-                </div><br>
+              <div class="container caixinha">
+                  <p class="h5 text-start box-title-margin">
+                      <img class="boxIcon" src="src/valores.png" alt="visão">
+                      Visão:
+                  </p>
+                  <p class="lead text-start">
+                      Ser uma empresa de destaque e exemplo no desenvolvimento econômico das áreas rurais no estado, 
+                      melhorando a qualidade de vida e sendo referência nacional.
+                  </p>
+              </div><br>
 
-                <div class="container caixinha">
-                    <p class="h5 text-start box-title-margin">
-                        <img class="boxIcon" src="src/missao.png" alt="missão">
-                        Missão:
-                    </p>
-                    <p class="lead text-start">
-                        Após a pandemia da Covid-19, nosso país está vivendo uma crise econômica severa, e o Amazonas é um dos 
-                        estados que mais está sofrendo nessa situação, nisso a BRA tem a missão de ajudar os amazonenses, 
-                        principalmente os produtores rurais, com o desenvolvimento técnico e a reestabelecer a economia do 
-                        estado, ampliando mais as oportunidades de trabalho, aumentando a produtividade e o desenvolvimento 
-                        socioeconômico da nossa região.
-                    </p>
-                </div>
-            </aside>
-        </section>
+              <div class="container caixinha">
+                  <p class="h5 text-start box-title-margin">
+                      <img class="boxIcon" src="src/missao.png" alt="missão">
+                      Missão:
+                  </p>
+                  <p class="lead text-start">
+                      Após a pandemia da Covid-19, nosso país está vivendo uma crise econômica severa, e o Amazonas é um dos 
+                      estados que mais está sofrendo nessa situação, nisso a BRA tem a missão de ajudar os amazonenses, 
+                      principalmente os produtores rurais, com o desenvolvimento técnico e a reestabelecer a economia do 
+                      estado, ampliando mais as oportunidades de trabalho, aumentando a produtividade e o desenvolvimento 
+                      socioeconômico da nossa região.
+                  </p>
+              </div>
+          </aside>
+      </article>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="initialize.js"></script>
   </body>
 </html>
