@@ -1,11 +1,11 @@
 setInterval(() => {
-    const navBar = document.querySelector('#navbar');
+    const navBar = document.querySelector('#hiddennav');
 
     if (window.innerWidth <= 440) {
-        navBar.className = 'navbar fixed-top navbar-expand-lg bg-light';
+        navBar.className = 'navbar navbar-expand-lg bg-light';
 
         return;
     }
 
-    navBar.className = 'navbar fixed-top navbar-expand-lg bg-light'
+    navBar.className = 'navbar hidden navbar-expand-lg bg-light'
 }, 100);

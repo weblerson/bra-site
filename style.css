@@ -54,6 +54,10 @@
     border-bottom-right-radius: 20%;
 }
 
+.hidden {
+    display: none;
+}
+
 .link-button {
     border-color: #6FD6FF;
     border-radius: 5%;
@@ -101,8 +105,20 @@
     height: 100%;
 }
 
+.mob-logo {
+    display: none;
+}
+
+#hiddennav {
+    z-index: -1;
+}
+
 @media screen and (max-width: 425px) {
     .low-device {
         display: none;
+    }
+
+    .mob-logo {
+        display: block;
     }
 }

@@ -15,30 +15,56 @@
   <body>
     <header>
         <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <button id="burguer" onclick="scrollToStart()" style="border: none;" class="navbar-brand">
-                <img style="width: 50px; height: 50px;" src="src/logo.gif" alt="logo home">
-              </button>
+          <div class="container-fluid">
+            <button id="burguer" onclick="scrollToStart()" style="border: none;" class="navbar-brand">
+              <img style="width: 50px; height: 50px;" src="src/logo.gif" alt="logo home">
+            </button>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <button onclick="scrollToWho()" class="nav-link active link-button" aria-current="page" href="#">Quem somos</button>
-                  </li>
-                  <li class="nav-item">
-                    <button onclick="scrollToObj()" class="nav-link active link-button" href="#">Objetivos e Metas</button>
-                  </li>
-                  <li class="nav-item">
-                    <button class="nav-link active link-button" href="#">Contatos</button>
-                  </li>
-                </ul>
-              </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <button onclick="scrollToWho()" class="nav-link active link-button" aria-current="page" href="#">Quem somos</button>
+                </li>
+                <li class="nav-item">
+                  <button onclick="scrollToObj()" class="nav-link active link-button" href="#">Objetivos e Metas</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link active link-button" href="#">Contatos</button>
+                </li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
+
+        <nav id="hiddennav" class="navbar fixed-top navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <button id="burguer" onclick="scrollToStart()" style="border: none;" class="navbar-brand">
+              <img style="width: 50px; height: 50px;" src="src/logo.gif" alt="logo home">
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <button onclick="scrollToWho()" class="nav-link active link-button" aria-current="page" href="#">Quem somos</button>
+                </li>
+                <li class="nav-item">
+                  <button onclick="scrollToObj()" class="nav-link active link-button" href="#">Objetivos e Metas</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link active link-button" href="#">Contatos</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </header>
 
     <main>
@@ -47,6 +73,14 @@
           <figure class="col-lg text-start figures">
             <img class="logo" src="src/logo.gif" alt="logo">
             <img class="title" src="src/title.png" alt="titulo">
+          </figure>
+        </div>
+      </section>
+
+      <section class="mob-logo">
+        <div class="row">
+          <figure class="col-lg text-center">
+            <img class="logo" src="src/logo.gif" alt="logo">
           </figure>
         </div>
       </section>
