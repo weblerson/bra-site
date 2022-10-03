@@ -54,6 +54,37 @@
     border-bottom-right-radius: 20%;
 }
 
+.link-button {
+    border: none;
+    background-color: transparent;
+}
+
+.model {
+    width: auto;
+    height: 200px;
+}
+
+.objTitle {
+    margin-left: 5%;
+}
+
+.modelButton {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.back-premens {
+    background-color: cyan;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 20%;
+}
+
+.back-torreifer {
+    background-color: rgb(255, 85, 85);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 20%;
+}
+
 @media screen and (max-width: 425px) {
     .low-device {
         display: none;
