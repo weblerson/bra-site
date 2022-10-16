@@ -91,15 +91,17 @@
 
 .back-premens {
     background-color: #4163e7;
-    border-top-right-radius: 5%;
+    border-top-right-radius: 10%;
     border-bottom-right-radius: 20%;
+    margin-right: 5%;
     color: white;
 }
 
 .back-torreifer {
     background-color: rgb(255, 85, 85);
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 20%;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 5%;
+    margin-left: 5%;
 }
 
 .model-modal {

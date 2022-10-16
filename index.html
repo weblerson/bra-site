@@ -17,7 +17,7 @@
         <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-light">
           <div class="container-fluid">
             <button id="burguer" onclick="scrollToStart()" style="border: none;" class="navbar-brand">
-              <img style="width: 50px; height: 50px;" src="src/logo.gif" alt="logo home">
+              <img style="width: 50px; height: 50px;" src="src/_logo.gif" alt="logo home">
             </button>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +29,13 @@
                 <li class="nav-item">
                   <button onclick="scrollToWho()" class="nav-link active link-button" aria-current="page" href="#">Quem somos</button>
                 </li>
-                <li class="nav-item">
-                  <button onclick="scrollToObj()" class="nav-link active link-button" href="#">Objetivos e Metas</button>
+                <li class="nav-item dropdown">
+                  <button class="nav-link active link-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Objetivos e Metas</button>
+                  <ul class="dropdown-menu">
+                    <li><a onclick="scrollToPremens()" class="dropdown-item" href="#">BRA-Premens</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a onclick="scrollToTorreifer()" class="dropdown-item" href="#">BRA-Torreifer</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <button class="nav-link active link-button" href="#">Contatos</button>
@@ -160,129 +165,128 @@
           <p style="margin-left: 2.5%;" class="h3">Objetivos e Metas:</p>
         </header>
 
-        <section class="row">
-          <div class="col-lg back-premens"><br>
-            <article>
-              <header class="text-start">
-                <p style="display: inline;" class="objTitle h3">BRA Premens</p>
-                <button class="btn btn-dark modelButton" data-bs-toggle="modal" data-bs-target="#premensModal">Modelo 3D</button>
-              </header>
-              
-              <div class="col-lg">
-                <p class="pMargin text-start lead">
-                  A fabricação de farinha de mandioca ainda se utiliza de um processo predominantemente braçal mesmo nos dias atuais. 
-                  Isso abre espaço para uma automação do processo, melhorando a produtividade e reduzindo o esforço humano. 
-                  Esse é o foco da BRA Premens, que é 
-                  analisar as principais partes para a elaboração de uma prensa e sua estrutura para automatizar a etapa de prensagem, 
-                  além de, também, estudar as técnicas necessárias, projetar e visar uma prática consciente.
-                </p>
-              </div>
-            </article><br>
-
+        <div class="text-start back-premens"><br>
+          <article>
             <header class="text-start">
-              <p class="pMargin h3">Objetivo:</p>
+              <p style="display: inline;" class="objTitle h3">BRA Premens</p>
+              <button class="btn btn-dark modelButton" data-bs-toggle="modal" data-bs-target="#premensModal">Modelo 3D</button>
             </header>
-
-            <p class="pMargin text-start lead">
-              Engenhar uma prensa eletromêcanica propondo-se semiautomatizar o processo de prensagem na fabricação de 
-              farinha de mandioca de pequenos produtores locais, podendo ser aplicado as tipologias de farinha d’água 
-              ou seca, em regiões rurais com acesso facultativo a fornecimento constante de internet.
-            </p><br>
-
-            <header class="text-start">
-              <p class="pMargin h3">Metas:</p>
-            </header>
-
-            <p class="pMargin text-start lead">
-              Diminuir o índice de esforço humano, semiautomatizar o processo de prensagem, diminuir o contato
-              entre o operário e o produto, diminuir a duração do processo e aumentar o nível de segurança
-              dos trabalhadores.
-            </p><br>
             
-            <!--Modal-->
+            <div class="col-lg">
+              <p class="pMargin text-start lead">
+                A fabricação de farinha de mandioca ainda se utiliza de um processo predominantemente braçal mesmo nos dias atuais. 
+                Isso abre espaço para uma automação do processo, melhorando a produtividade e reduzindo o esforço humano. 
+                Esse é o foco da BRA Premens, que é 
+                analisar as principais partes para a elaboração de uma prensa e sua estrutura para automatizar a etapa de prensagem, 
+                além de, também, estudar as técnicas necessárias, projetar e visar uma prática consciente.
+              </p>
+            </div>
+          </article><br>
 
-            <div style="color: black;" class="modal fade" id="premensModal" tabindex="-1" aria-labelledby="premensModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="premensModalLabel">Modelagem 3D - Premens</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <figure>
-                      <img class="model-modal" src="src/premens.jpg" alt="premens model">
-                    </figure>
-                  </div>
+          <header class="text-start">
+            <p class="pMargin h3">Objetivo:</p>
+          </header>
+
+          <p class="pMargin text-start lead">
+            Engenhar uma prensa eletromêcanica propondo-se semiautomatizar o processo de prensagem na fabricação de 
+            farinha de mandioca de pequenos produtores locais, podendo ser aplicado as tipologias de farinha d’água 
+            ou seca, em regiões rurais com acesso facultativo a fornecimento constante de internet.
+          </p><br>
+
+          <header class="text-start">
+            <p class="pMargin h3">Metas:</p>
+          </header>
+
+          <p class="pMargin text-start lead">
+            Diminuir o índice de esforço humano, semiautomatizar o processo de prensagem, diminuir o contato
+            entre o operário e o produto, diminuir a duração do processo e aumentar o nível de segurança
+            dos trabalhadores.
+          </p><br>
+          
+          <!--Modal-->
+
+          <div style="color: black;" class="modal fade" id="premensModal" tabindex="-1" aria-labelledby="premensModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="premensModalLabel">Modelagem 3D - Premens</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <figure>
+                    <img class="model-modal" src="src/premens.jpg" alt="premens model">
+                  </figure>
                 </div>
               </div>
             </div>
-
-            <!--Modal-->
-
           </div>
 
-          <div style="margin-left: -20%; margin-right: -20%;" class="col-lg"></div><br>
+          <!--Modal-->
 
-          <div style="color: white;" class="col-lg back-torreifer"><br>
-            <article>
-              <header class="text-start">
-                <p style="display: inline;" class="objTitle h3">BRA Torreifer</p>
-                <button class="btn btn-dark modelButton" data-bs-toggle="modal" data-bs-target="#torreiferModal">Modelo 3D</button>
-              </header>
-              
-              <div class="col-lg">
-                <p class="pMargin text-start lead">
-                  A torrefação da farinha de mandioca é feita de forma manual, onde o operário fica por volta de 4 horas, 
-                  mexendo com uma "pá" a farinha numa temperatura de 160°C, nisso ocorre vários fatores negativos tanto 
-                  para o produto final quanto para o operário, entre eles, estão: má higienização, péssimas condições de 
-                  trabalho, baixa produtividade e risco de saúde para o operário. Desta forma, a BRA Torreifer vem para 
-                  solucionar esta problemática.
-                </p>
-              </div>
-            </article><br>
+        </div>
 
+          <!-- <div style="margin-left: -20%; margin-right: -20%;" class="col-lg"></div><br> -->
+        <br>
+
+        <div style="color: white;" class="text-end back-torreifer"><br>
+          <article>
             <header class="text-start">
-              <p class="pMargin h3">Objetivo:</p>
+              <p style="display: inline;" class="objTitle h3">BRA Torreifer</p>
+              <button class="btn btn-dark modelButton" data-bs-toggle="modal" data-bs-target="#torreiferModal">Modelo 3D</button>
             </header>
+            
+            <div class="col-lg">
+              <p class="pMargin text-start lead">
+                A torrefação da farinha de mandioca é feita de forma manual, onde o operário fica por volta de 4 horas, 
+                mexendo com uma "pá" a farinha numa temperatura de 160°C, nisso ocorre vários fatores negativos tanto 
+                para o produto final quanto para o operário, entre eles, estão: má higienização, péssimas condições de 
+                trabalho, baixa produtividade e risco de saúde para o operário. Desta forma, a BRA Torreifer vem para 
+                solucionar esta problemática.
+              </p>
+            </div>
+          </article><br>
 
-            <p class="pMargin text-start lead">
-              Engenhar um forno eletrônico para automatizar e monitorar o processo de torrefação da farinha de mandioca de 
-              pequenos produtores locais, podendo ser aplicado as tipologias de farinha d’água ou seca, em regiões rurais com 
-              acesso facultativo a fornecimento constante de internet.
-            </p><br>
+          <header class="text-start">
+            <p class="pMargin h3">Objetivo:</p>
+          </header>
 
-            <header class="text-start">
-              <p class="pMargin h3">Metas:</p>
-            </header>
+          <p class="pMargin text-start lead">
+            Engenhar um forno eletrônico para automatizar e monitorar o processo de torrefação da farinha de mandioca de 
+            pequenos produtores locais, podendo ser aplicado as tipologias de farinha d’água ou seca, em regiões rurais com 
+            acesso facultativo a fornecimento constante de internet.
+          </p><br>
 
-            <p class="pMargin text-start lead">
-              Diminuir o índice de esforço humano, automatizar o processo de torrefação, diminuir o contato
-              entre o operário e o produto, diminuir a duração do processo e aumentar o nível de segurança
-              dos trabalhadores.
-            </p>
+          <header class="text-start">
+            <p class="pMargin h3">Metas:</p>
+          </header>
 
-            <!--Modal-->
+          <p class="pMargin text-start lead">
+            Diminuir o índice de esforço humano, automatizar o processo de torrefação, diminuir o contato
+            entre o operário e o produto, diminuir a duração do processo e aumentar o nível de segurança
+            dos trabalhadores.
+          </p>
 
-            <div style="color: black;" class="modal fade" id="torreiferModal" tabindex="-1" aria-labelledby="torreiferModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="torreiferModalLabel">Modelagem 3D - Torreifer</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <figure>
-                      <img class="model-modal" src="src/torreifer.png" alt="modelagem torreifer">
-                    </figure>
-                  </div>
+          <!--Modal-->
+
+          <div style="color: black;" class="modal fade" id="torreiferModal" tabindex="-1" aria-labelledby="torreiferModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="torreiferModalLabel">Modelagem 3D - Torreifer</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <figure>
+                    <img class="model-modal" src="src/torreifer.png" alt="modelagem torreifer">
+                  </figure>
                 </div>
               </div>
             </div>
-
-            <!--Modal-->
-
           </div>
-        </section>
+
+          <!--Modal-->
+
+        </div>
       </article>
     </main>
 
